@@ -32,7 +32,6 @@ export class CitiesComponent implements OnInit {
 
   ngOnInit() {
     this.loadData();
-    var pageEvent = new PageEvent();
   }
 
   loadData(query?: string) {

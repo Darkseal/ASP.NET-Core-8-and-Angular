@@ -16,7 +16,7 @@ import { CountriesComponent } from './countries/countries.component';
     HomeComponent,
     NavMenuComponent,
     CitiesComponent,
-    CountriesComponent,
+    CountriesComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
