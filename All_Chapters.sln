@@ -67,6 +67,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCities.Server", "Chapt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCities.Server.Tests", "Chapter_11\WorldCities\WorldCities.Server.Tests\WorldCities.Server.Tests.csproj", "{27323A21-7616-4CF6-BA4C-905B885903A0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter_12", "Chapter_12", "{4BC6888D-CC36-4A88-A363-A36A0D27E502}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "worldcities.client", "Chapter_12\WorldCities\worldcities.client\worldcities.client.esproj", "{E08D449D-D864-46EB-A5C4-B924ECF2BB3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCities.Server", "Chapter_12\WorldCities\WorldCities.Server\WorldCities.Server.csproj", "{B6A61EFB-A8DE-4B9C-869F-0D12B90404F5}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "healthcheck.client", "Chapter_12\HealthCheck\healthcheck.client\healthcheck.client.esproj", "{7EDDB2E5-C3E3-4A83-8576-FE1905AC5E1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCheck.Server", "Chapter_12\HealthCheck\HealthCheck.Server\HealthCheck.Server.csproj", "{1031E865-1E0C-4181-B9CC-ED6B92F702BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +191,26 @@ Global
 		{27323A21-7616-4CF6-BA4C-905B885903A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27323A21-7616-4CF6-BA4C-905B885903A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27323A21-7616-4CF6-BA4C-905B885903A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E08D449D-D864-46EB-A5C4-B924ECF2BB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E08D449D-D864-46EB-A5C4-B924ECF2BB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E08D449D-D864-46EB-A5C4-B924ECF2BB3A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E08D449D-D864-46EB-A5C4-B924ECF2BB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08D449D-D864-46EB-A5C4-B924ECF2BB3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E08D449D-D864-46EB-A5C4-B924ECF2BB3A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B6A61EFB-A8DE-4B9C-869F-0D12B90404F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A61EFB-A8DE-4B9C-869F-0D12B90404F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A61EFB-A8DE-4B9C-869F-0D12B90404F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A61EFB-A8DE-4B9C-869F-0D12B90404F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EDDB2E5-C3E3-4A83-8576-FE1905AC5E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EDDB2E5-C3E3-4A83-8576-FE1905AC5E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EDDB2E5-C3E3-4A83-8576-FE1905AC5E1E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7EDDB2E5-C3E3-4A83-8576-FE1905AC5E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EDDB2E5-C3E3-4A83-8576-FE1905AC5E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EDDB2E5-C3E3-4A83-8576-FE1905AC5E1E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1031E865-1E0C-4181-B9CC-ED6B92F702BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1031E865-1E0C-4181-B9CC-ED6B92F702BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1031E865-1E0C-4181-B9CC-ED6B92F702BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1031E865-1E0C-4181-B9CC-ED6B92F702BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,6 +238,10 @@ Global
 		{A253AAC1-1FAE-4A16-947B-A7D73CC1D930} = {8D2BD305-652D-43FB-9892-3E5C1816B016}
 		{5274C8E5-9E1B-4F96-8D49-8BE5526982CA} = {8D2BD305-652D-43FB-9892-3E5C1816B016}
 		{27323A21-7616-4CF6-BA4C-905B885903A0} = {8D2BD305-652D-43FB-9892-3E5C1816B016}
+		{E08D449D-D864-46EB-A5C4-B924ECF2BB3A} = {4BC6888D-CC36-4A88-A363-A36A0D27E502}
+		{B6A61EFB-A8DE-4B9C-869F-0D12B90404F5} = {4BC6888D-CC36-4A88-A363-A36A0D27E502}
+		{7EDDB2E5-C3E3-4A83-8576-FE1905AC5E1E} = {4BC6888D-CC36-4A88-A363-A36A0D27E502}
+		{1031E865-1E0C-4181-B9CC-ED6B92F702BE} = {4BC6888D-CC36-4A88-A363-A36A0D27E502}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1CC2A914-28F9-4F0B-AA10-11AC428B14A0}
