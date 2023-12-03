@@ -31,7 +31,7 @@ import { CityService } from './cities/city.service';
     AngularMaterialModule,
     ReactiveFormsModule
   ],
-  providers: [ CityService ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
