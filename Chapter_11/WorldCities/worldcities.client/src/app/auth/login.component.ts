@@ -39,15 +39,13 @@ export class LoginComponent
 
     this.authService
       .login(loginRequest)
-
-    this.authService
-      .login(loginRequest)
       .subscribe({
         next: (result) => {
           console.log(result);
           this.loginResult = result;
           if (result.success) {
-            this.router.navigate(["/"]);
+            let returnUrl = this.activatedRoute.snapshot.queryParamMap.get('returnUrl') || '/';
+            this.router.navigateByUrl(returnUrl);
           }
         },
         error: (error) => {
