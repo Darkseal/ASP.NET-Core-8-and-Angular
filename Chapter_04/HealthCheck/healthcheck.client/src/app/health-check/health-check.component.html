@@ -1,7 +1,7 @@
 <h1>Health Check</h1>
 <p>Here are the results of our health check:</p>
 <p *ngIf="!result"><em>Loading...</em></p>
-<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="result">
+<table *ngIf="result">
   <thead>
     <tr>
       <th>Name</th>

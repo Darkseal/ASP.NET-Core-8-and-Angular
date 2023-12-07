@@ -1,7 +1,7 @@
 <h1>Health Check</h1>
 <p>Here are the results of our health check:</p>
-<p *ngIf="!result"><em>Loading...</em></p>
-<table *ngIf="result">
+<p *ngIf="!(result | async)"><em>Loading...</em></p>
+<table *ngIf="result | async as res">
   <thead>
     <tr>
       <th>Name</th>
@@ -19,3 +19,9 @@
     </tr>
   </tbody>
 </table>
+
+<hr />
+
+<button (click)="onRefresh()">
+  Refresh
+</button>
