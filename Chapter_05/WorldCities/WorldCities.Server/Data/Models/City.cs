@@ -21,7 +21,7 @@ namespace WorldCities.Server.Data.Models
         /// <summary>
         /// City name (in UTF8 format)
         /// </summary>
-        public string Name { get; set; } = null!;
+        public required string Name { get; set; }
 
         /// <summary>
         /// City latitude
@@ -46,7 +46,7 @@ namespace WorldCities.Server.Data.Models
         /// <summary>
         /// The country related to this city.
         /// </summary>
-        public Country? Country { get; set; } = null!;
+        public Country? Country { get; set; }
         #endregion
     }
 }

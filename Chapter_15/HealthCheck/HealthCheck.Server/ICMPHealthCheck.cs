@@ -38,7 +38,9 @@ namespace HealthCheck.Server
             }
             catch (Exception e)
             {
-                return HealthCheckResult.Unhealthy();
+                var err =
+                    $"ICMP to {Host} failed: {e.Message}";
+                return HealthCheckResult.Unhealthy(err);
             }
         }
     }

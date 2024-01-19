@@ -46,7 +46,7 @@ namespace WorldCities.Server.Data.Models
         /// <summary>
         /// The country related to this city.
         /// </summary>
-        public Country? Country { get; set; } = null!;
+        public Country? Country { get; set; }
         #endregion
     }
 }

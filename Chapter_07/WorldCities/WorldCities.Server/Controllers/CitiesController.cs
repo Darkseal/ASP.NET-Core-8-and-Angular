@@ -117,14 +117,14 @@ namespace WorldCities.Server.Controllers
 
         private bool CityExists(int id)
         {
-            return _context.Cities.Any(e => e.Id == id);
+            return _context.Cities.AsNoTracking().Any(e => e.Id == id);
         }
 
         [HttpPost]
         [Route("IsDupeCity")]
         public bool IsDupeCity(City city)
         {
-            return _context.Cities.Any(
+            return _context.Cities.AsNoTracking().Any(
                 e => e.Name == city.Name
                 && e.Lat == city.Lat
                 && e.Lon == city.Lon

@@ -1,6 +1,6 @@
 <div class="country-edit">
   <h1>{{title}}</h1>
-  <p *ngIf="this.id && !country"><em>Loading...</em></p>
+  <p *ngIf="id && !country"><em>Loading...</em></p>
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
     <!-- Name -->
@@ -43,7 +43,7 @@
     <div>
       <button mat-flat-button color="primary"
               type="submit" [disabled]="!form.valid">
-        {{ this.id ? "Save" : "Create" }}
+        {{ id ? "Save" : "Create" }}
       </button>
       <button mat-flat-button color="secondary"
               [routerLink]="['/countries']">

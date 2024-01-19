@@ -41,7 +41,7 @@ namespace WorldCities.Server.Data.Models
         /// <summary>
         /// A collection of all the cities related to this country.
         /// </summary>
-        public ICollection<City>? Cities { get; set; } = null!;
+        public ICollection<City>? Cities { get; set; }
         #endregion
     }
 }

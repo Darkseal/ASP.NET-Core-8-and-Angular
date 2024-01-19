@@ -15,7 +15,7 @@ namespace WorldCities.Server.Data
         [JsonPropertyName("iso3")]
         public string ISO3 { get; set; } = null!;
 
-        public int? TotCities { get; set; } = null!;
+        public int? TotCities { get; set; }
         #endregion
     }
 }

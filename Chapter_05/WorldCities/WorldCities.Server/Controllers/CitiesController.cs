@@ -102,7 +102,7 @@ namespace WorldCities.Server.Controllers
 
         private bool CityExists(int id)
         {
-            return _context.Cities.Any(e => e.Id == id);
+            return _context.Cities.AsNoTracking().Any(e => e.Id == id);
         }
     }
 }
